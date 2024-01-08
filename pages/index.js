@@ -83,7 +83,13 @@ export default function Home() {
       >
         <TopNav />
         <div className="mx-10">
-          <h1 className="font-semibold text-lg my-4">Overview</h1>
+          <div className="flex items-center justify-between">
+            <h1 className="font-semibold text-lg my-4">Overview</h1>
+            <button data-dropdown-toggle="dropdown" className="text-[#4d4d4d] p-2 border-[#d9d9d9] border-[1px] m-0 h-10 bg-white flex items-center focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm text-center inline-flex items-center" type="button">Last month <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+            </svg>
+            </button>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <HomeCard
               heading="Online orders"
@@ -95,7 +101,7 @@ export default function Home() {
             />
           </div>
           <h1 className="font-medium text-[#1A181E] text-xl my-4">Transactions | This month</h1>
-          <div className="bg-white w-full">
+          <div className="bg-white w-full mb-10 rounded-xl shadow-md">
             <div className="flex items-center justify-between py-5 px-2">
               <div className="flex items-center gap-2 border-[#D9D9D9] border-[1px] py-[10px] px-[16px] rounded-md">
                 <Image src={SearchIconTable} alt="Search Icon Table" width={14} height={14} />

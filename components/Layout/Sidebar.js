@@ -157,7 +157,7 @@ export default function Sidebar({ show, setter }) {
                         </div>
                         <div className='text-white/80 text-[14px] font-medium'>Plugins</div>
                     </Link>
-                    <div className="mt-10">
+                    <div className="mt-20">
                         <NavBottomCard />
                     </div>
                 </div>
