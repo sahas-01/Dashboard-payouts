@@ -17,6 +17,7 @@ import AudienceIcon from '../../public/navicons/audience-icon.svg';
 import AppearanceIcon from '../../public/navicons/appearance-icon.svg';
 import PluginsIcon from '../../public/navicons/plugins-icon.svg';
 import DownArrowSideNav from '../../public/navicons/down-arrow-sidenav.svg';
+import NavBottomCard from '../NavBottomCard';
 
 export default function Sidebar({ show, setter }) {
     const router = useRouter();
@@ -149,13 +150,16 @@ export default function Sidebar({ show, setter }) {
                     </Link>
                     <Link
                         href="/plugins"
-                        className={`flex gap-1 [&>*]:my-auto text-md pl-6 py-3`}
+                        className={`flex gap-1 [&>*]:my-auto text-md pl-6 py-3 mb-[100px]`}
                     >
                         <div className="text-xl flex [&>*]:mx-auto w-[30px]">
                             <Image src={PluginsIcon} alt="Plugins Icon" width={18} height={18} />
                         </div>
                         <div className='text-white/80 text-[14px] font-medium'>Plugins</div>
                     </Link>
+                    <div className="mt-10">
+                        <NavBottomCard />
+                    </div>
                 </div>
             </div>
             {show ? <ModalOverlay /> : <></>}

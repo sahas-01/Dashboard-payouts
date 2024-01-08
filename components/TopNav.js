@@ -9,7 +9,7 @@ const TopNav = () => {
     return (
         <div className='flex bg-white justify-between mb-2 py-[12px] px-[32px]'>
             <div className='flex gap-2 items-center'>
-                <h1 className='text-[#1A181E] font-normal text-[15px]'>Payments</h1>
+                <h1 className='text-[#1A181E] font-normal text-[15px] mx-1.5'>Payments</h1>
                 <Image src={HelpIcon} alt="Help Icon" width={14} height={14} />
                 <p className='text-[#4D4D4D] font-normal text-xs'>How it works</p>
             </div>
