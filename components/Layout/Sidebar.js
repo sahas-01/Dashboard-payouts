@@ -13,7 +13,7 @@ export default function Sidebar({ show, setter }) {
     const router = useRouter();
 
     // Define our base class
-    const className = "bg-black w-[250px] transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40";
+    const className = "transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40";
     // Append class based on state of sidebar visiblity
     const appendClass = show ? " ml-0" : " ml-[-250px] md:ml-0";
 
@@ -33,7 +33,7 @@ export default function Sidebar({ show, setter }) {
                 <div className="text-xl flex [&>*]:mx-auto w-[30px]">
                     {icon}
                 </div>
-                <div>{name}</div>
+                <div className='text-white text-[14px] font-medium'>{name}</div>
             </Link>
         )
     }
@@ -50,7 +50,7 @@ export default function Sidebar({ show, setter }) {
 
     return (
         <>
-            <div className={`${className}${appendClass} bg-[#0f172a]`}>
+            <div className={`${className}${appendClass} bg-[#1E2640] w-56`}>
                 <div className="p-2 flex">
                     <Link href="/">
                         <h2 className="text-white">Nishyan</h2>
