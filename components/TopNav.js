@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopNav = () => {
     return (
-        <div className='flex bg-white justify-between my-2'>
+        <div className='flex bg-white justify-between mb-2 py-[12px] px-[32px]'>
             <div className='flex gap-2'>
                 <h1>Payments</h1>
                 <p>?</p>

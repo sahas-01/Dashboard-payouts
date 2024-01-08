@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
  
+
+body{
+  background: #fafafa;
+}
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #F2F2F2;
     --foreground: 224 71.4% 4.1%;
 
     --card: 0 0% 100%;
