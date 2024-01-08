@@ -101,7 +101,7 @@ export default function Home() {
             />
           </div>
           <h1 className="font-medium text-[#1A181E] text-xl my-4">Transactions | This month</h1>
-          <div className="bg-white w-full mb-10 rounded-xl shadow-md">
+          <div className="bg-white w-full mb-10 rounded-xl shadow-md py-2">
             <div className="flex items-center justify-between py-5 px-2">
               <div className="flex items-center gap-2 border-[#D9D9D9] border-[1px] py-[10px] px-[16px] rounded-md">
                 <Image src={SearchIconTable} alt="Search Icon Table" width={14} height={14} />

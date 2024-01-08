@@ -17,7 +17,7 @@ const TopNav = () => {
                 <Image src={SearchIcon} alt="Search Icon" width={14} height={14} />
                 <input type="text" placeholder="Search features,tutorials,etc..." className="text-[#808080] w-full bg-[#F2F2F2] focus:border-none overflow-hidden outline-none whitespace-nowrap" />
             </div>
-            <div className="flex gap-1 mx-5">
+            <div className="flex gap-1 mx-1">
                 <div className="rounded-3xl bg-[#E6E6E6] text-white px-2.5 rounded-md">
                     <Image src={ContactIcon} alt="Contact Icon" className='py-2 px-0.5 w-[20px] h-full' />
                 </div>
