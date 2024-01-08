@@ -12,7 +12,7 @@ To attempt at making a pixel perfect version of the Payoutsv2 dashboard of Dukaa
 ### Installation
 To run this project locally, follow these steps:
  ```bash
-   git clone https://github.com/sahas-01/Payoutsv2-dukaan/
+   git clone [https://github.com/sahas-01/Payoutsv2-dukaan/](https://github.com/sahas-01/Payoutsv2-dukaan.git)
    cd Payoutsv2-dukaan
    npm install
    npm run dev
