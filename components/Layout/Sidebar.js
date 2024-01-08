@@ -41,7 +41,7 @@ export default function Sidebar({ show, setter }) {
             <div className={`${className}${appendClass} bg-[#1E2640] w-64`}>
                 <div className="p-5 flex">
                     <Image src="/dukaan-nav.png" alt="Company Logo" width={55} height={55} />
-                    <div className="flex flex-col pl-2 gap-[4px]">
+                    <div className="flex flex-col pl-2 gap-y-[7px] gap-x-1">
                         <h2 className="text-white font-medium text-[15px]">Nishyan</h2>
                         <p className="text-white/80 underline font-normal text-[13px]">Visit Store!</p>
                     </div>

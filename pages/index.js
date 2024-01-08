@@ -20,7 +20,10 @@ import {
 import Layout from "@/components/Layout"
 import HomeCard from "@/components/HomeCard"
 import TopNav from "@/components/TopNav"
-
+import Image from "next/image"
+import SortBtn from "../public/Sort.svg"
+import DownloadBtn from "../public/download-icon.svg"
+import SearchIconTable from "../public/search-icon-table.svg"
 const invoices = [
   {
     orderId: "#281209",
@@ -91,17 +94,25 @@ export default function Home() {
               text="23,92,312.19"
             />
           </div>
-          <h1 className="font-semibold text-lg my-4">Transactions | This month</h1>
+          <h1 className="font-medium text-[#1A181E] text-xl my-4">Transactions | This month</h1>
           <div className="bg-white w-full">
             <div className="flex items-center justify-between py-5 px-2">
-              <input
-                type="text"
-                placeholder="Search by order ID.."
-                className="border border-gray-300 rounded-md px-2 py-1 w-[200px] mr-2"
-              />
+              <div className="flex items-center gap-2 border-[#D9D9D9] border-[1px] py-[10px] px-[16px] rounded-md">
+                <Image src={SearchIconTable} alt="Search Icon Table" width={14} height={14} />
+                <input
+                  type="text"
+                  placeholder="Search by order ID..."
+                  className="outline-none black/60 font-normal text-sm"
+                />
+              </div>
               <div className="flex gap-2">
-                <button className="bg-white text-[#4D4D4D] border-[#D9D9D9] border-2 px-4 py-1 rounded-md">Sort</button>
-                <button className="bg-white text-[#4D4D4D] border-[#D9D9D9] border-2 px-4 py-1 rounded-md">Download</button>
+                <button className="bg-white flex gap-x-1 items-center text-[#4D4D4D] border-[#D9D9D9] border-2 px-4 py-1 rounded-md">
+                  Sort
+                  <Image src={SortBtn} alt="Filter Icon" width={16} height={16} />
+                </button>
+                <button className="bg-white text-[#4D4D4D] border-[#D9D9D9] border-2 px-4 py-1 rounded-md w-12 h-10">
+                  <Image src={DownloadBtn} alt="Download Icon" width={17} height={17} />
+                </button>
               </div>
             </div>
             <Table>
@@ -137,14 +148,8 @@ export default function Home() {
                 <PaginationItem>
                   <PaginationEllipsis className='text-[#4D4D4D] text-sm font-normal' />
                 </PaginationItem>
-                {/* <PaginationItem>
-                  <PaginationLink href="#">10</PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink href="#">11</PaginationLink>
-                </PaginationItem> */}
                 {
-                  [10,11,12,13,14,15,16,17,18].map((item,index) => (
+                  [10, 11, 12, 13, 14, 15, 16, 17, 18].map((item, index) => (
                     <PaginationItem key={index}>
                       {/* in the first item, the background color is supposed to be blue */}
                       <PaginationLink className={
