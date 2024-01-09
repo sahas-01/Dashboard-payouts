@@ -86,7 +86,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <h1 className="font-semibold text-lg my-4">Overview</h1>
             <button data-dropdown-toggle="dropdown" className="text-[#4d4d4d] p-2 border-[#d9d9d9] border-[1px] m-0 h-10 bg-white flex items-center focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm text-center inline-flex items-center" type="button">Last month <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
             </svg>
             </button>
           </div>
@@ -134,7 +134,7 @@ export default function Home() {
               </TableHeader>
               <TableBody>
                 {invoices.map((invoice) => (
-                  <TableRow key={invoice.invoice}>
+                  <TableRow key={invoice.orderId}>
                     <TableCell className="font-medium text-[#146EB4]">{invoice.orderId}</TableCell>
                     <TableCell>{invoice.orderDate}</TableCell>
                     <TableCell className="text-right">{invoice.totalAmount}</TableCell>
