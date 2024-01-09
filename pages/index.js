@@ -143,7 +143,7 @@ export default function Home() {
                 ))}
               </TableBody>
             </Table>
-            <Pagination className='pt-3'>
+            <Pagination className='pt-3 pb-2 px-10 md:px-1'>
               <PaginationContent>
                 <PaginationItem>
                   <PaginationPrevious className='text-[#4D4D4D] border-[1px] border-[#D9D9D9] text-sm font-normal' href="#" />

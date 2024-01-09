@@ -104,7 +104,7 @@ export default function Sidebar({ show, setter }) {
                         <div className='text-white/80 text-[14px] font-medium'>Analytics</div>
                     </Link>
                     <Link
-                        href="/payments"
+                        href="/"
                         className={`flex [&>*]:my-auto text-md pl-4 py-3 bg-[#353C53] mx-2 rounded`}
                     >
                         <div className="text-xl flex [&>*]:mx-auto w-[30px]">
